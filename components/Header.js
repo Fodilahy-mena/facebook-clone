@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {Link} from 'react-router-dom';
 import Styled from 'styled-components'
 const HeaderStyle = Styled.header`
@@ -38,7 +38,16 @@ justify-content: space-between;
 list-style: none;
 padding: 0;
 `;
+const ProfileImgStyle = Styled.img`
+border-radius: 50%;
+width: 50px;
+`;
+import { Context } from '../Context';
+
 function Header() {
+    const { posts , users}= useContext(Context);
+    const postId = posts.map(pst => pst.userId);
+    const findUsersId = users.find(usr => usr.userId == postId);
     return (
         <>
             <HeaderStyle>
@@ -46,7 +55,10 @@ function Header() {
                 <NavStyle>
                     <Link to="/">Feed</Link>
                     <Link to="/add">Add a post</Link>
-                    <Link to="/userName">UserName</Link>
+                    <Link to="/userName">
+                        {findUsersId.userName} 
+                        <ProfileImgStyle src={findUsersId.profilePic}/>
+                    </Link>
                 </NavStyle>
             </HeaderStyle>
         </>

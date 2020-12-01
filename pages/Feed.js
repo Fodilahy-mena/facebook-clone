@@ -4,11 +4,10 @@ import FeedList from '../components/FeedList';
 import { Context } from '../Context';
 
 function Feed() {
-    const { feed }= useContext(Context);
-    console.log("feedback", feed);
+    const { posts, users }= useContext(Context);
     return (
         <div>
-            <FeedList feed={feed}/>
+            <FeedList posts={posts} users={users}/>
         </div>
     )
 }
