@@ -46,7 +46,7 @@ function ContextProvider(props) {
       }
     
 
-    return <Context.Provider value={{posts, addLikes, users}}>
+    return <Context.Provider value={{posts, addLikes, users, dispatch}}>
                 {props.children}
             </Context.Provider>
             
