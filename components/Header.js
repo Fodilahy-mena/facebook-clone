@@ -45,9 +45,8 @@ width: 50px;
 import { Context } from '../Context';
 
 function Header() {
-    const { posts , users}= useContext(Context);
-    const postId = posts.map(pst => pst.userId);
-    const findUsersId = users.find(usr => usr.userId == postId);
+    const {users}= useContext(Context);
+    
     return (
         <>
             <HeaderStyle>
@@ -56,8 +55,8 @@ function Header() {
                     <Link to="/">Feed</Link>
                     <Link to="/add">Add a post</Link>
                     <Link to="/userName">
-                        {findUsersId.userName} 
-                        <ProfileImgStyle src={findUsersId.profilePic}/>
+                    {users[0].userName}
+                        <ProfileImgStyle src={users[0].profilePic}/>
                     </Link>
                 </NavStyle>
             </HeaderStyle>

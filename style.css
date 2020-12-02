@@ -43,3 +43,5 @@ body {
     }]
 }, 
 */
+
+/* dispatch({type: "ADD_NEW_COMMENT_TO_POST", postId: postId, comment: newComment}) */

@@ -18,7 +18,7 @@
         "commentId": 1,
         "text": "My favorite",
         "date": "01/12/2020",
-        "userId": 1606797074476
+        "userId": 1606797074477
     },
     {   
         "commentId": 2,
@@ -26,7 +26,37 @@
         "date": "01/12/2020",
         "userId": 1606797074476
     }]
+},
+{
+    "postId": 2,
+    "date": "01/12/2020",
+    "legend": "An ongoing personal project. Los Angeles (Angelenos) residence. One strobe, one photograph. ",
+    "userId": 1606797074477,
+    "postPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC8RLe_OOzKzgfcfMly6PVFQf6h92g8gxpPQ&usqp=CAU",
+    "likes": [
+        {
+            "userId": 1606797074478,
+            "likeId": 1
+        },
+        {
+            "userId": 1606797074479,
+            "likeId": 2
+        }
+    ],
+    "comments": [{
+        "commentId": 1,
+        "text": "Hahaha!",
+        "date": "01/12/2020",
+        "userId": 1606797074476
+    },
+    {   
+        "commentId": 2,
+        "text": "Good pic",
+        "date": "01/12/2020",
+        "userId": 1606797074477
+    }]
 }
+
 
 ]
 

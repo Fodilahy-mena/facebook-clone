@@ -8575,12 +8575,36 @@ module.exports = [{
     "commentId": 1,
     "text": "My favorite",
     "date": "01/12/2020",
-    "userId": 1606797074476
+    "userId": 1606797074477
   }, {
     "commentId": 2,
     "text": "Oh my",
     "date": "01/12/2020",
     "userId": 1606797074476
+  }]
+}, {
+  "postId": 2,
+  "date": "01/12/2020",
+  "legend": "An ongoing personal project. Los Angeles (Angelenos) residence. One strobe, one photograph. ",
+  "userId": 1606797074477,
+  "postPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC8RLe_OOzKzgfcfMly6PVFQf6h92g8gxpPQ&usqp=CAU",
+  "likes": [{
+    "userId": 1606797074478,
+    "likeId": 1
+  }, {
+    "userId": 1606797074479,
+    "likeId": 2
+  }],
+  "comments": [{
+    "commentId": 1,
+    "text": "Hahaha!",
+    "date": "01/12/2020",
+    "userId": 1606797074476
+  }, {
+    "commentId": 2,
+    "text": "Good pic",
+    "date": "01/12/2020",
+    "userId": 1606797074477
   }]
 }];
 },{}],"userData.json":[function(require,module,exports) {
@@ -8589,20 +8613,19 @@ module.exports = [{
   "userName": "Jerome",
   "profilePic": "data:image/jpeg;base64,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"
 }, {
-  "userId": 1606797074476,
-  "userName": "Jerome",
-  "profilePic": "https://picsum.photos/100"
+  "userId": 1606797074477,
+  "userName": "Jey",
+  "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_2O5ngxoY3B4Vb-d6MRsS_-F0moFSI39SQ&usqp=CAU"
 }];
-},{}],"Context.js":[function(require,module,exports) {
+},{}],"UseFeed.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ContextProvider = ContextProvider;
-exports.Context = void 0;
+exports.default = void 0;
 
-var _react = _interopRequireWildcard(require("react"));
+var _react = require("react");
 
 var _posts = _interopRequireDefault(require("./posts.json"));
 
@@ -8610,9 +8633,13 @@ var _userData = _interopRequireDefault(require("./userData.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -8632,18 +8659,43 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var Context = _react.default.createContext();
-
-exports.Context = Context;
-console.log(_posts.default);
-
-function useFeed() {
+function UseFeed() {
   var _useReducer = (0, _react.useReducer)(function (state, action) {
     switch (action.type) {
       case 'POSTS':
         {
           return _objectSpread(_objectSpread({}, state), {}, {
-            myPosts: state.myPosts
+            posts: action.posts
+          });
+        }
+
+      case 'USERS':
+        {
+          return _objectSpread(_objectSpread({}, state), {}, {
+            users: state.users
+          });
+        }
+
+      case 'COMMENTS':
+        {
+          return _objectSpread(_objectSpread({}, state), {}, {
+            comments: action.comments
+          });
+        }
+
+      case 'ADD_NEW_COMMENTS':
+        {
+          var newPosts = state.posts.map(function (post) {
+            if (post.postId === action.postId) {
+              return _objectSpread(_objectSpread({}, post), {}, {
+                comments: [].concat(_toConsumableArray(post.comments), [action.comment])
+              });
+            }
+
+            return post;
+          });
+          return _objectSpread(_objectSpread({}, state), {}, {
+            posts: newPosts
           });
         }
 
@@ -8651,7 +8703,9 @@ function useFeed() {
         return state;
     }
   }, {
-    myPosts: _posts.default
+    posts: [],
+    users: _userData.default,
+    comments: []
   }),
       _useReducer2 = _slicedToArray(_useReducer, 2),
       state = _useReducer2[0],
@@ -8660,28 +8714,61 @@ function useFeed() {
   return [state, dispatch];
 }
 
+var _default = UseFeed;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./posts.json":"posts.json","./userData.json":"userData.json"}],"Context.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ContextProvider = ContextProvider;
+exports.Context = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _UseFeed3 = _interopRequireDefault(require("./UseFeed"));
+
+var _posts = _interopRequireDefault(require("./posts.json"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var Context = _react.default.createContext();
+
+exports.Context = Context;
+
 function ContextProvider(props) {
-  var _useFeed = useFeed(),
-      _useFeed2 = _slicedToArray(_useFeed, 2),
-      state = _useFeed2[0],
-      dispatch = _useFeed2[1]; // const [newComment, setNewComent] = useState([]);
+  var _UseFeed = (0, _UseFeed3.default)(),
+      _UseFeed2 = _slicedToArray(_UseFeed, 2),
+      state = _UseFeed2[0],
+      dispatch = _UseFeed2[1];
 
-
-  var myPosts = state.myPosts;
-
-  var _useState = (0, _react.useState)(myPosts),
-      _useState2 = _slicedToArray(_useState, 2),
-      posts = _useState2[0],
-      setPosts = _useState2[1];
-
-  var _useState3 = (0, _react.useState)(_userData.default),
-      _useState4 = _slicedToArray(_useState3, 2),
-      users = _useState4[0],
-      setUsers = _useState4[1];
-
+  var posts = state.posts,
+      users = state.users;
+  console.log(posts);
   (0, _react.useEffect)(function () {
     dispatch({
-      type: "POSTS"
+      type: "POSTS",
+      posts: _posts.default
+    });
+    dispatch({
+      type: "USERS"
     });
   }, []);
 
@@ -8718,7 +8805,7 @@ function ContextProvider(props) {
     }
   }, props.children);
 }
-},{"react":"node_modules/react/index.js","./posts.json":"posts.json","./userData.json":"userData.json"}],"components/Header.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./UseFeed":"UseFeed.js","./posts.json":"posts.json"}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8780,23 +8867,16 @@ var ProfileImgStyle = _styledComponents.default.img(_templateObject3());
 
 function Header() {
   var _useContext = (0, _react.useContext)(_Context.Context),
-      posts = _useContext.posts,
       users = _useContext.users;
 
-  var postId = posts.map(function (pst) {
-    return pst.userId;
-  });
-  var findUsersId = users.find(function (usr) {
-    return usr.userId == postId;
-  });
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(HeaderStyle, null, /*#__PURE__*/_react.default.createElement("h1", null, "OnjaBook"), /*#__PURE__*/_react.default.createElement(NavStyle, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/"
   }, "Feed"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/add"
   }, "Add a post"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/userName"
-  }, findUsersId.userName, /*#__PURE__*/_react.default.createElement(ProfileImgStyle, {
-    src: findUsersId.profilePic
+  }, users[0].userName, /*#__PURE__*/_react.default.createElement(ProfileImgStyle, {
+    src: users[0].profilePic
   })))));
 }
 
@@ -8816,11 +8896,31 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _Context = require("../Context");
 
+var _UseFeed3 = _interopRequireDefault(require("../UseFeed"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function _templateObject6() {
   var data = _taggedTemplateLiteral(["\nposition: relative;\nmargin: 16px\n"]);
@@ -8899,18 +8999,47 @@ var SpanStyle = _styledComponents.default.span(_templateObject6());
 function FeedList(_ref) {
   var posts = _ref.posts,
       users = _ref.users;
-  var postId = posts.map(function (pst) {
-    return pst.userId;
-  });
-  var findUsersId = users.find(function (usr) {
-    return usr.userId == postId;
-  });
-  console.log(findUsersId);
+
+  var _UseFeed = (0, _UseFeed3.default)(),
+      _UseFeed2 = _slicedToArray(_UseFeed, 2),
+      state = _UseFeed2[0],
+      dispatch = _UseFeed2[1];
+
+  function Submit(e, id) {
+    var date = new Date(Date.now()).toLocaleDateString();
+    console.log(date);
+    e.preventDefault();
+    var text = e.target.text;
+    posts.map(function (post) {
+      if (post.postId === id) {
+        console.log(post.postId);
+        console.log(post.comments);
+        return _objectSpread(_objectSpread({}, post), {}, {
+          comments: post.comments.push({
+            commentId: Date.now(),
+            date: date,
+            text: text.value,
+            userId: 1606797074476
+          })
+        });
+      }
+
+      return posts;
+    });
+    dispatch({
+      type: "POSTS",
+      posts: posts
+    });
+    e.target.reset();
+  }
 
   var _useContext = (0, _react.useContext)(_Context.Context),
       addLikes = _useContext.addLikes;
 
   var feedBackElement = posts.map(function (post) {
+    var findUsersId = users.find(function (usr) {
+      return usr.userId === post.userId;
+    });
     return /*#__PURE__*/_react.default.createElement(PostStyle, {
       key: post.postId
     }, /*#__PURE__*/_react.default.createElement(CommenterStyle, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(ProfileImgStyle, {
@@ -8923,9 +9052,17 @@ function FeedList(_ref) {
       return /*#__PURE__*/_react.default.createElement("li", {
         key: comment.commentId
       }, /*#__PURE__*/_react.default.createElement(CommenterStyle, null, /*#__PURE__*/_react.default.createElement(CommenterStyle, null, /*#__PURE__*/_react.default.createElement(ProfileImgStyle, {
-        src: findUsersId.profilePic
-      }), /*#__PURE__*/_react.default.createElement(SpanStyle, null, findUsersId.userName)), /*#__PURE__*/_react.default.createElement("span", null, comment.date)), /*#__PURE__*/_react.default.createElement("p", null, comment.text));
-    }))), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
+        src: users.find(function (usr) {
+          return usr.userId === comment.userId;
+        }).profilePic
+      }), /*#__PURE__*/_react.default.createElement(SpanStyle, null, users.find(function (usr) {
+        return usr.userId === comment.userId;
+      }).userName)), /*#__PURE__*/_react.default.createElement("span", null, comment.date)), /*#__PURE__*/_react.default.createElement("p", null, comment.text));
+    }))), /*#__PURE__*/_react.default.createElement("form", {
+      onSubmit: function onSubmit(e) {
+        return Submit(e, post.postId);
+      }
+    }, /*#__PURE__*/_react.default.createElement("input", {
       type: "text",
       name: "text",
       placeholder: "Add a comment..."
@@ -8938,7 +9075,7 @@ function FeedList(_ref) {
 
 var _default = FeedList;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js"}],"pages/Feed.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js","../UseFeed":"UseFeed.js"}],"pages/Feed.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36304,7 +36441,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64569" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54944" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,6 +1,7 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Styled from 'styled-components';
 import { Context } from '../Context';
+import UseFeed from '../UseFeed';
 
 const ProfileImgStyle = Styled.img`
 border-radius: 50%;
@@ -31,13 +32,43 @@ margin: 16px
 `;
 
 function FeedList({posts, users}) {
-    const postId = posts.map(pst => pst.userId);
-    const findUsersId = users.find(usr => usr.userId == postId);
+    const [state, dispatch] = UseFeed();
+    
+  function Submit(e, id) {
+    let date = new Date(Date.now()).toLocaleDateString();
+    console.log(date);
+    e.preventDefault();
+    
+    const {text} = e.target;
+    posts.map(post => {
 
-    console.log(findUsersId);
-    const { addLikes }= useContext(Context);
-    const feedBackElement = posts.map(post => {
+        if(post.postId === id) {
+            console.log(post.postId)
+            console.log(post.comments)
+        return {
+          ...post,
+          comments: post.comments.push({
+              commentId: Date.now(),
+              date: date,
+              text: text.value,
+              userId: 1606797074476
+            })
+          
+        }
         
+        }
+        return posts;
+      })
+      dispatch({ type: "POSTS", posts: posts })
+    
+    e.target.reset();
+  }
+
+    const { addLikes }= useContext(Context);
+
+    const feedBackElement = posts.map(post => {
+    const findUsersId = users.find(usr => usr.userId === post.userId);
+    
         return (<PostStyle key={post.postId}>
                     <CommenterStyle>
                         <div>
@@ -57,11 +88,12 @@ function FeedList({posts, users}) {
                     <nav>
                         <UlStyle>
                             {post.comments.map(comment => (
+                                
                                 <li key={comment.commentId}>
                                     <CommenterStyle>
                                         <CommenterStyle>
-                                            <ProfileImgStyle src={findUsersId.profilePic}/>
-                                            <SpanStyle>{findUsersId.userName}</SpanStyle>
+                                            <ProfileImgStyle src={users.find(usr => usr.userId === comment.userId).profilePic}/>
+                                            <SpanStyle>{users.find(usr => usr.userId === comment.userId).userName}</SpanStyle>
                                         </CommenterStyle>
                                         <span>{comment.date}</span>
                                     </CommenterStyle>
@@ -71,12 +103,11 @@ function FeedList({posts, users}) {
                             
                         </UlStyle>
                     </nav>
-                    <form>
+                    <form onSubmit={(e) => Submit(e, post.postId)}>
                         <input type="text" name="text" placeholder="Add a comment..."/>
                         <button type="submit">Post</button>
                     </form>
                 </PostStyle>)
-        
     })
     return (
         <>
@@ -84,5 +115,6 @@ function FeedList({posts, users}) {
         </>
     )
 }
+
 
 export default FeedList

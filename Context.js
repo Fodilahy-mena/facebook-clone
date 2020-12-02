@@ -1,36 +1,21 @@
 import React, {useState, useEffect, useReducer} from 'react';
+import UseFeed from './UseFeed';
 import Posts from './posts.json';
-import userData from './userData.json';
 
 const Context = React.createContext();
-console.log(Posts)
-function useFeed() {
-    let [state, dispatch] = useReducer((state, action) => {
-        switch(action.type) {
-          case 'POSTS': {
-            return { ...state, myPosts: state.myPosts }
-          }
-          default:
-            return state
-        }
-      }, {
-        myPosts: Posts
-      })
-      return [state, dispatch]
-} 
+
+
 
 function ContextProvider(props) {
-  const [state, dispatch] = useFeed();
-  // const [newComment, setNewComent] = useState([]);
-  let {myPosts} = state;
-  const [posts, setPosts] = useState(myPosts);
-  const [users, setUsers] = useState(userData);
- 
-
-  useEffect(() => {
-    dispatch({ type: "POSTS"})
-  }, []);
+  const [state, dispatch] = UseFeed();
   
+  let {posts, users} = state;
+  console.log(posts);
+  useEffect(() => {
+    dispatch({ type: "POSTS", posts: Posts})
+    dispatch({ type: "USERS"})
+  }, []);
+
     const addLikes = (idPost) => {
     //     const updatePost = posts.map(post => {
     //       // console.log(post)
@@ -59,11 +44,12 @@ function ContextProvider(props) {
     //     setPosts(updatePost);
     //     // console.log(updatePost)
       }
-  
+    
 
     return <Context.Provider value={{posts, addLikes, users}}>
                 {props.children}
             </Context.Provider>
+            
 }
 
 export { ContextProvider, Context};
