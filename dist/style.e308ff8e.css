@@ -46,4 +46,11 @@ body {
 
 /* dispatch({type: "ADD_NEW_COMMENT_TO_POST", postId: postId, comment: newComment}) */
 
+/* ,
+    {
+        "userId": 1606967835541,
+        "userName": "Trump",
+        "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypLl0rTjecMVxRm0KjLXStHRze22hkAmZFA&usqp=CAU"
+    } */
+
 /*# sourceMappingURL=/style.e308ff8e.css.map */

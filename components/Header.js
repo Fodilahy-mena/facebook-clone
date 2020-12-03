@@ -46,6 +46,7 @@ import { Context } from '../Context';
 
 function Header() {
     const {users}= useContext(Context);
+    console.log("usrs",users[0])
     
     return (
         <>

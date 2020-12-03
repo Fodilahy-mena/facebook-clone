@@ -8870,6 +8870,7 @@ function Header() {
   var _useContext = (0, _react.useContext)(_Context.Context),
       users = _useContext.users;
 
+  console.log("usrs", users[0]);
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(HeaderStyle, null, /*#__PURE__*/_react.default.createElement("h1", null, "OnjaBook"), /*#__PURE__*/_react.default.createElement(NavStyle, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/"
   }, "Feed"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
@@ -8944,20 +8945,19 @@ function Add() {
       date: date,
       postPhoto: postPhoto,
       legend: legend,
-      userId: now,
+      userId: 1606797074476,
       likes: [{
-        userId: now,
+        userId: 1606797074476,
         likeId: 1
       }, {
-        userId: 1606797074478,
+        userId: 1606797074476,
         likeId: 2
       }],
-      comments: [{
-        commentId: 1,
-        text: "Ok",
-        date: date,
-        userId: now
-      }]
+      comments: [// commentId: 1,
+        // text: "Ok",
+        // date: date,
+        // userId: 1606797074476
+      ]
     };
     dispatch({
       type: "POSTS",
@@ -8969,18 +8969,9 @@ function Add() {
     setPostPhoto('');
   };
 
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Hello Add"), /*#__PURE__*/_react.default.createElement("form", {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("form", {
     onSubmit: handleSubmit
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    type: "url",
-    name: "postPhoto",
-    value: postPhoto,
-    onChange: function onChange(e) {
-      return setPostPhoto(e.target.value);
-    },
-    placeholder: "Title",
-    required: true
-  }), /*#__PURE__*/_react.default.createElement("textarea", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "New post:"), /*#__PURE__*/_react.default.createElement("textarea", {
     type: "text",
     name: "legend",
     value: legend,
@@ -8990,6 +8981,15 @@ function Add() {
     placeholder: "Say what\u2019s on your mind...",
     rows: "5",
     cols: "30"
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Picture url : "), /*#__PURE__*/_react.default.createElement("input", {
+    type: "url",
+    name: "postPhoto",
+    value: postPhoto,
+    onChange: function onChange(e) {
+      return setPostPhoto(e.target.value);
+    },
+    placeholder: "Title",
+    required: true
   }), /*#__PURE__*/_react.default.createElement("button", {
     type: "submit"
   }, "Post")));
@@ -9231,17 +9231,66 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Context = require("../Context");
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function UserName() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "User Name here"));
+  var _useContext = (0, _react.useContext)(_Context.Context),
+      users = _useContext.users;
+
+  var _useState = (0, _react.useState)(''),
+      _useState2 = _slicedToArray(_useState, 2),
+      userName = _useState2[0],
+      setUserName = _useState2[1];
+
+  var _useState3 = (0, _react.useState)(''),
+      _useState4 = _slicedToArray(_useState3, 2),
+      profilePic = _useState4[0],
+      setProfilePic = _useState4[1];
+
+  var firstUser = users[0];
+
+  function handleClick(e) {
+    var findUsersId = users.find(function (usr) {
+      return usr.userId === firstUser.userId;
+    });
+    console.log(findUsersId);
+    e.preventDefault();
+  }
+
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Options: "), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("label", null, "Username"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    name: "userName",
+    placeholder: "Type your username here"
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Profile picture"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    name: "profilePic",
+    placeholder: "Paste a URL here"
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleClick
+  }, "Save")));
 }
 
 var _default = UserName;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"pages/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Context":"Context.js"}],"pages/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36587,7 +36636,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54944" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62577" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

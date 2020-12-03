@@ -15,23 +15,23 @@ function Add() {
             date: date,
             postPhoto: postPhoto,
             legend: legend,
-            userId: now,
+            userId: 1606797074476,
             likes: [
                 {
-                    userId: now,
+                    userId: 1606797074476,
                     likeId: 1
                 },
                 {
-                    userId: 1606797074478,
+                    userId: 1606797074476,
                     likeId: 2
                 }
             ],
-            comments: [{
-                commentId: 1,
-                text: "Ok",
-                date: date,
-                userId: now
-            }]
+            comments: [
+                // commentId: 1,
+                // text: "Ok",
+                // date: date,
+                // userId: 1606797074476
+            ]
         }
 
         dispatch({ type: "POSTS", posts: [...posts, newPost]})
@@ -47,10 +47,11 @@ function Add() {
     
     return (
         <div>
-            <h2>Hello Add</h2>
             <form onSubmit={handleSubmit}>
+                <h2>New post:</h2>
+                <textarea type="text" name="legend" value={legend} onChange={(e) => setLegend(e.target.value)} placeholder="Say what’s on your mind..." rows="5" cols="30"/><br/>
+                <label>Picture url : </label>
                 <input type="url" name="postPhoto" value={postPhoto} onChange={(e) => setPostPhoto(e.target.value)} placeholder="Title" required/> 
-                <textarea type="text" name="legend" value={legend} onChange={(e) => setLegend(e.target.value)} placeholder="Say what’s on your mind..." rows="5" cols="30"/>
                 <button type="submit">Post</button>
             </form>
         </div>
