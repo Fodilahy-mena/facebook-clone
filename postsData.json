@@ -1,0 +1,65 @@
+[
+    {
+        "postId": "1",
+        "date": 1606974838058,
+        "postTextContent": "This is my first post!",
+        "userId": "1",
+        "imgUrl": "http://picsum.photos/500",
+        "likes": [
+            {
+                "likeId": "1",
+                "userId": "1"
+            },
+            {
+                "likeId": "2",
+                "userId": "2"
+            }
+        ],
+        "comments": [
+            {
+                "commentId": "1",
+                "userId": "1",
+                "date": 1606974934358,
+                "commentTextContent": "Hello, super post."
+            },
+            {
+                "commentId": "2",
+                "userId": "2",
+                "date": 1606974934999,
+                "commentTextContent": "Hey I'm using Onja book!"
+            }
+        ]
+
+    },
+    {
+        "postId": "2",
+        "date": 1606974838999,
+        "postTextContent": "This is my second post!",
+        "userId": "1",
+        "imgUrl": "http://picsum.photos/500",
+        "likes": [
+            {
+                "likeId": "2",
+                "userId": "2"
+            }
+        ],
+        "comments": [
+            {
+                "commentId": "1",
+                "userId": "2",
+                "date": 1606974934358,
+                "commentTextContent": "Really nice!"
+            }
+        ]
+
+    },
+    {
+        "postId": "3",
+        "date": 1606975027876,
+        "postTextContent": "Hiiiiiiii everybody",
+        "userId": "1",
+        "imgUrl": "http://picsum.photos/500",
+        "likes": [],
+        "comments": []
+    }
+]
