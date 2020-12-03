@@ -1,28 +1,47 @@
-import React,{useContext, useState} from 'react';
+import React,{useContext, useState, useEffect} from 'react';
 import { Context } from '../Context';
 
 function UserName() {
-    const {users}= useContext(Context);
-    const [userName, setUserName] = useState('');
-    const [profilePic, setProfilePic] = useState('');
+    const { state, dispatch }= useContext(Context);
+    const { users, currentUser } = state;
+	const [userName, setUserName] = useState('');
+	const [profilePic, setProfilePic] = useState('');
     
-    let firstUser = users[0];
-    function handleClick(e) {
-        const findUsersId = users.find(usr => usr.userId === firstUser.userId);
-        console.log(findUsersId)
 
-        e.preventDefault();
-        
-    }
+    const currentUserObj = users.find(user => user.userId === currentUser) || {
+		userName: '',
+		profilePic: '',
+    };
+    console.log("mam",currentUserObj)
+    useEffect(() => {
+		setUserName(currentUserObj.userName);
+		setProfilePic(currentUserObj.profilePic);
+    }, [users]);
+    
+    function handleNewOptions(e) {
+		e.preventDefault();
+		dispatch({ type: 'UPDATE_CURRENT_USER', userName, profilePic });
+		
+	}
     return (
         <div>
             <h2>Options: </h2>
-            <form>
+            <form onSubmit={handleNewOptions}>
                 <label>Username</label>
-                <input type="text" name="userName" placeholder="Type your username here"/><br/>
+				<input
+					type="text"
+					value={userName}
+					onChange={e => setUserName(e.target.value)}
+					
+				/><br/>
                 <label>Profile picture</label>
-                <input type="text" name="profilePic" placeholder="Paste a URL here"/><br/>
-                <button onClick={handleClick}>Save</button>
+				<input
+					type="url"
+					value={profilePic}
+					onChange={e => setProfilePic(e.target.value)}
+				/>
+                <br/>
+				<button>Save</button>
             </form>
         </div>
     )
