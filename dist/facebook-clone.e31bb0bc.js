@@ -9463,7 +9463,7 @@ function Feed() {
 
 var _default = Feed;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../components/FeedList":"components/FeedList.js","../Context":"Context.js"}],"pages/UserName.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/FeedList":"components/FeedList.js","../Context":"Context.js"}],"pages/Switch.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9476,6 +9476,103 @@ var _react = _interopRequireWildcard(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _Context = require("../Context");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\nbackground: #C4C4C4;\nborder-radius: 10px;\nborder: none;\npadding: 12px 40px;\nmax-width: 100%;\noutline: none;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var SelectStStyle = _styledComponents.default.select(_templateObject());
+
+function SwitchAccount() {
+  var _useContext = (0, _react.useContext)(_Context.Context),
+      state = _useContext.state,
+      dispatch = _useContext.dispatch;
+
+  var _useState = (0, _react.useState)(''),
+      _useState2 = _slicedToArray(_useState, 2),
+      switchAccount = _useState2[0],
+      setSwitchAccount = _useState2[1];
+
+  var users = state.users;
+
+  function handleSwitch(e) {
+    e.preventDefault();
+    dispatch({
+      type: 'SWITCHT_ACCOUNT',
+      switchAccount: switchAccount
+    });
+  }
+
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("form", {
+    onSubmit: handleSwitch
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Switch account:"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(SelectStStyle, {
+    name: "switchAccount",
+    value: switchAccount,
+    onChange: function onChange(e) {
+      return setSwitchAccount(e.target.value);
+    }
+  }, users.map(function (user) {
+    return /*#__PURE__*/_react.default.createElement("option", {
+      value: user.userId,
+      key: user.userId
+    }, user.userName);
+  })), /*#__PURE__*/_react.default.createElement("p", null), /*#__PURE__*/_react.default.createElement("button", {
+    style: {
+      cursor: "pointer",
+      background: "C4C4C4",
+      borderRadius: "10px",
+      border: "none",
+      outline: "none",
+      padding: "12px 16px"
+    }
+  }, "Save")));
+}
+
+var _default = SwitchAccount;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js"}],"pages/UserName.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _Context = require("../Context");
+
+var _Switch = _interopRequireDefault(require("./Switch"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9539,12 +9636,6 @@ function UserName() {
       profilePic = _useState4[0],
       setProfilePic = _useState4[1];
 
-  var _useState5 = (0, _react.useState)(''),
-      _useState6 = _slicedToArray(_useState5, 2),
-      switchAccount = _useState6[0],
-      setSwitchAccount = _useState6[1];
-
-  console.log("ctruu", currentUser);
   var currentUserObj = users.find(function (user) {
     return user.userId === currentUser;
   }) || {
@@ -9562,10 +9653,17 @@ function UserName() {
       type: 'UPDATE_CURRENT_USER',
       userName: userName,
       profilePic: profilePic
-    }); // dispatch({type: 'SWITCHT_ACCOUNT', switchAccount: switchAccount})
+    });
   }
 
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Options: "), /*#__PURE__*/_react.default.createElement("form", {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/userName/options"
+  }, "Account options"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/userName/options/switch"
+  }, "Switch account")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/userName/options"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Options: "), /*#__PURE__*/_react.default.createElement("form", {
     onSubmit: handleNewOptions
   }, /*#__PURE__*/_react.default.createElement(InputContainerStyle, null, /*#__PURE__*/_react.default.createElement("label", null, "Username"), /*#__PURE__*/_react.default.createElement(InputStyle, {
     type: "text",
@@ -9591,12 +9689,14 @@ function UserName() {
       padding: "12px 16px"
     },
     type: "submit"
-  }, "Save")));
+  }, "Save"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/userName/options/switch"
+  }, /*#__PURE__*/_react.default.createElement(_Switch.default, null))));
 }
 
 var _default = UserName;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js"}],"pages/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js","./Switch":"pages/Switch.js"}],"pages/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
