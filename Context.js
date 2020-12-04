@@ -8,9 +8,12 @@ const Context = React.createContext();
 function ContextProvider(props) {
   let [state, dispatch] = useReducer((state, action) => {
     switch(action.type) {
+      case 'SWITCHT_ACCOUNT': {
+        return { ...state, currentUser: action.switchAccount}
+      }
       case 'UPDATE_CURRENT_USER': {
         const newUsersArray = state.users.map(user => {
-          if (user.userId === state.currentUser) {
+          if (user.userId == state.currentUser) {
             // update the user and return it
             return {
               ...user,
@@ -52,6 +55,37 @@ function ContextProvider(props) {
           })
         return { ...state, posts: newPosts }
       }
+      case 'UNLIKE_POST': {
+        const newPostsFromUnlike = state.posts.map(post => {
+          if(post.postId === action.postId) {
+            
+            return {
+               ...post, 
+              likes: post.likes.filter(like => like.userId !== state.currentUser) 
+              }
+          };
+          return post;
+        })
+        return {
+          ...state,
+
+          posts: newPostsFromUnlike,
+        }
+      }
+      case 'LIKE_POST': {
+        const newPosts = state.posts.map(post => {
+          if(post.postId == action.postId) {
+            return {
+               ...post, likes: [...post.likes, action.newLike] 
+              }
+          };
+          return post;
+        })
+        return {
+          ...state,
+          posts: newPosts
+        }
+      }
       default:
         return state
     }
@@ -59,7 +93,7 @@ function ContextProvider(props) {
     posts: [],
     users: usersData,
     comments: [],
-    currentUser: 1606797074476,
+    currentUser: "1606797074476",
   })
   
   
@@ -70,37 +104,10 @@ function ContextProvider(props) {
     dispatch({ type: "USERS"})
   }, []);
 
-    const addLikes = (idPost) => {
-    //     const updatePost = posts.map(post => {
-    //       // console.log(post)
-    //       let userArr = post.user.map(usr => usr);
-    //       let likeArr = post.like.map(lk => lk);
 
-    //       userArr.map(usr => {
-    //         if(usr.id) {
-    //           likeArr.map(lk => {
-    //           if(lk.id) {
-    //             console.log(lk.likes)
-    //             return {
-    //             ...lk,
-    //             likes: lk.likes + 1,
-    //             };
-    //           }
-    //           return lk;
-    //         })
-    //       }
-    //       return usr;
-          
-    //       })
-    //       return post;
-          
-    //     });
-    //     setPosts(updatePost);
-    //     // console.log(updatePost)
-      }
     
 
-    return <Context.Provider value={{posts, addLikes, users, dispatch, state}}>
+    return <Context.Provider value={{posts, users, dispatch, state}}>
                 {props.children}
             </Context.Provider>
             

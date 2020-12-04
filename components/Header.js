@@ -2,64 +2,75 @@ import React, {useContext} from 'react'
 import {Link} from 'react-router-dom';
 import Styled from 'styled-components'
 const HeaderStyle = Styled.header`
-// display: flex;
-// justify-content: space-between;
-// margin-top: 2rem;
  h1 {
-    margin: 0;
+    // margin: 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 56px;
 
-    color: #000000;
+    color: #0404fe;
 
  }
- a {
+ 
+
+}
+`; 
+const ProfileLinkStyles = Styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 15px;
+	align-items: center;
+	img {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+	}
+`;
+const NavStyles = Styled.nav`
+	ul  {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+    }
+     a {
     position: relative;
-    top: 12px;
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
     line-height: 42px;
-    // margin-left: 2rem;
-    // margin-right: 2rem;
-
-    color: #000000;
-
-}
-`; 
-const NavStyle = Styled.nav`
-display: flex;
-justify-content: space-between;
-list-style: none;
-padding: 0;
+    color: #0404fe;
 `;
-const ProfileImgStyle = Styled.img`
-border-radius: 50%;
-width: 50px;
-`;
+
 import { Context } from '../Context';
 
 function Header() {
-    const {users}= useContext(Context);
-    console.log("usrs",users[0])
+    const { state}= useContext(Context);
+    const { users, currentUser } = state;
     
+    const currentUserObj = users.find(user => user.userId == currentUser)
     return (
         <>
             <HeaderStyle>
                 <h1>OnjaBook</h1>
-                <NavStyle>
-                    <Link to="/">Feed</Link>
-                    <Link to="/add">Add a post</Link>
-                    <Link to="/userName">
-                    {users[0].userName}
-                        <ProfileImgStyle src={users[0].profilePic}/>
-                    </Link>
-                </NavStyle>
+                <NavStyles>
+                    <ul>
+                    <li><Link to="/">Feed</Link></li>
+                    <li><Link to="/add">Add a post</Link></li>
+                    <li><Link to="/userName">
+                        <ProfileLinkStyles>
+
+                            <span>{currentUserObj.userName}</span>
+                            <img src={currentUserObj.profilePic}/>
+                        </ProfileLinkStyles>
+                    </Link></li>
+                    </ul>
+                </NavStyles>
             </HeaderStyle>
         </>
     )

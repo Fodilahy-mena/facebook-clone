@@ -8562,58 +8562,58 @@ module.exports = [{
   "postId": 1,
   "date": "01/12/2020",
   "legend": "Philibert Rabezoza (1923 – 29 September 2001), better known by the name Rakoto Frah, was a flautist and composer of traditional music of the central highlands of Madagascar. Born in 1923 near the capital city of Antananarivo to a poor rural family, Rakoto Frah surmounted the challenges posed by his underprivileged origins to become the most acclaimed 20th century performer of the sodina flute, one of the oldest traditional instruments on the island.",
-  "userId": 1606797074476,
+  "userId": "1606797074476",
   "postPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Rakoto_Frah_portrait_-_Flute_Master_of_Madagascar.jpg/220px-Rakoto_Frah_portrait_-_Flute_Master_of_Madagascar.jpg",
   "likes": [{
-    "userId": 1606797074477,
+    "userId": "1606797074477",
     "likeId": 1
   }, {
-    "userId": 1606797074478,
+    "userId": "1606797074476",
     "likeId": 2
   }],
   "comments": [{
     "commentId": 1,
     "text": "My favorite",
     "date": "01/12/2020",
-    "userId": 1606797074477
+    "userId": "1606797074477"
   }, {
     "commentId": 2,
     "text": "Oh my",
     "date": "01/12/2020",
-    "userId": 1606797074476
+    "userId": "1606797074476"
   }]
 }, {
   "postId": 2,
   "date": "01/12/2020",
   "legend": "An ongoing personal project. Los Angeles (Angelenos) residence. One strobe, one photograph. ",
-  "userId": 1606797074477,
+  "userId": "1606797074477",
   "postPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC8RLe_OOzKzgfcfMly6PVFQf6h92g8gxpPQ&usqp=CAU",
   "likes": [{
-    "userId": 1606797074478,
+    "userId": "1606797074476",
     "likeId": 1
   }, {
-    "userId": 1606797074479,
+    "userId": "1606797074477",
     "likeId": 2
   }],
   "comments": [{
     "commentId": 1,
     "text": "Hahaha!",
     "date": "01/12/2020",
-    "userId": 1606797074476
+    "userId": "1606797074476"
   }, {
     "commentId": 2,
     "text": "Good pic",
     "date": "01/12/2020",
-    "userId": 1606797074477
+    "userId": "1606797074477"
   }]
 }];
 },{}],"userData.json":[function(require,module,exports) {
 module.exports = [{
-  "userId": 1606797074476,
+  "userId": "1606797074476",
   "userName": "Jerome",
   "profilePic": "data:image/jpeg;base64,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"
 }, {
-  "userId": 1606797074477,
+  "userId": "1606797074477",
   "userName": "Jey",
   "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_2O5ngxoY3B4Vb-d6MRsS_-F0moFSI39SQ&usqp=CAU"
 }];
@@ -8671,10 +8671,17 @@ exports.Context = Context;
 function ContextProvider(props) {
   var _useReducer = (0, _react.useReducer)(function (state, action) {
     switch (action.type) {
+      case 'SWITCHT_ACCOUNT':
+        {
+          return _objectSpread(_objectSpread({}, state), {}, {
+            currentUser: action.switchAccount
+          });
+        }
+
       case 'UPDATE_CURRENT_USER':
         {
           var newUsersArray = state.users.map(function (user) {
-            if (user.userId === state.currentUser) {
+            if (user.userId == state.currentUser) {
               // update the user and return it
               return _objectSpread(_objectSpread({}, user), {}, {
                 userName: action.userName,
@@ -8733,6 +8740,43 @@ function ContextProvider(props) {
           });
         }
 
+      case 'UNLIKE_POST':
+        {
+          var newPostsFromUnlike = state.posts.map(function (post) {
+            if (post.postId === action.postId) {
+              return _objectSpread(_objectSpread({}, post), {}, {
+                likes: post.likes.filter(function (like) {
+                  return like.userId !== state.currentUser;
+                })
+              });
+            }
+
+            ;
+            return post;
+          });
+          return _objectSpread(_objectSpread({}, state), {}, {
+            posts: newPostsFromUnlike
+          });
+        }
+
+      case 'LIKE_POST':
+        {
+          var _newPosts = state.posts.map(function (post) {
+            if (post.postId == action.postId) {
+              return _objectSpread(_objectSpread({}, post), {}, {
+                likes: [].concat(_toConsumableArray(post.likes), [action.newLike])
+              });
+            }
+
+            ;
+            return post;
+          });
+
+          return _objectSpread(_objectSpread({}, state), {}, {
+            posts: _newPosts
+          });
+        }
+
       default:
         return state;
     }
@@ -8740,7 +8784,7 @@ function ContextProvider(props) {
     posts: [],
     users: _userData.default,
     comments: [],
-    currentUser: 1606797074476
+    currentUser: "1606797074476"
   }),
       _useReducer2 = _slicedToArray(_useReducer, 2),
       state = _useReducer2[0],
@@ -8758,36 +8802,9 @@ function ContextProvider(props) {
       type: "USERS"
     });
   }, []);
-
-  var addLikes = function addLikes(idPost) {//     const updatePost = posts.map(post => {
-    //       // console.log(post)
-    //       let userArr = post.user.map(usr => usr);
-    //       let likeArr = post.like.map(lk => lk);
-    //       userArr.map(usr => {
-    //         if(usr.id) {
-    //           likeArr.map(lk => {
-    //           if(lk.id) {
-    //             console.log(lk.likes)
-    //             return {
-    //             ...lk,
-    //             likes: lk.likes + 1,
-    //             };
-    //           }
-    //           return lk;
-    //         })
-    //       }
-    //       return usr;
-    //       })
-    //       return post;
-    //     });
-    //     setPosts(updatePost);
-    //     // console.log(updatePost)
-  };
-
   return /*#__PURE__*/_react.default.createElement(Context.Provider, {
     value: {
       posts: posts,
-      addLikes: addLikes,
       users: users,
       dispatch: dispatch,
       state: state
@@ -8817,7 +8834,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\nborder-radius: 50%;\nwidth: 50px;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tul  {\n\t\tdisplay: flex;\n\t\tflex-direction: row;\n\t\tjustify-content: space-between;\n\t\talign-items: center;\n\t\tlist-style: none;\n\t\tpadding: 0;\n\t\tmargin: 0;\n    }\n     a {\n    position: relative;\n    text-decoration: none;\n    font-family: Roboto;\n    font-style: normal;\n    font-weight: normal;\n    line-height: 42px;\n    color: #0404fe;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -8827,7 +8844,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\ndisplay: flex;\njustify-content: space-between;\nlist-style: none;\npadding: 0;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-between;\n\tgap: 15px;\n\talign-items: center;\n\timg {\n\t\twidth: 35px;\n\t\theight: 35px;\n\t\tborder-radius: 50%;\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -8837,7 +8854,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n// display: flex;\n// justify-content: space-between;\n// margin-top: 2rem;\n h1 {\n    margin: 0;\n    font-family: Roboto;\n    font-style: normal;\n    font-weight: normal;\n    font-size: 48px;\n    line-height: 56px;\n\n    color: #000000;\n\n }\n a {\n    position: relative;\n    top: 12px;\n    text-decoration: none;\n    font-family: Roboto;\n    font-style: normal;\n    font-weight: normal;\n    font-size: 36px;\n    line-height: 42px;\n    // margin-left: 2rem;\n    // margin-right: 2rem;\n\n    color: #000000;\n\n}\n"]);
+  var data = _taggedTemplateLiteral(["\n h1 {\n    // margin: 0;\n    font-family: Roboto;\n    font-style: normal;\n    font-weight: normal;\n\n    color: #0404fe;\n\n }\n \n\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -8850,24 +8867,28 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var HeaderStyle = _styledComponents.default.header(_templateObject());
 
-var NavStyle = _styledComponents.default.nav(_templateObject2());
+var ProfileLinkStyles = _styledComponents.default.div(_templateObject2());
 
-var ProfileImgStyle = _styledComponents.default.img(_templateObject3());
+var NavStyles = _styledComponents.default.nav(_templateObject3());
 
 function Header() {
   var _useContext = (0, _react.useContext)(_Context.Context),
-      users = _useContext.users;
+      state = _useContext.state;
 
-  console.log("usrs", users[0]);
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(HeaderStyle, null, /*#__PURE__*/_react.default.createElement("h1", null, "OnjaBook"), /*#__PURE__*/_react.default.createElement(NavStyle, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  var users = state.users,
+      currentUser = state.currentUser;
+  var currentUserObj = users.find(function (user) {
+    return user.userId == currentUser;
+  });
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(HeaderStyle, null, /*#__PURE__*/_react.default.createElement("h1", null, "OnjaBook"), /*#__PURE__*/_react.default.createElement(NavStyles, null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/"
-  }, "Feed"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }, "Feed")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/add"
-  }, "Add a post"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }, "Add a post")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/userName"
-  }, users[0].userName, /*#__PURE__*/_react.default.createElement(ProfileImgStyle, {
-    src: users[0].profilePic
-  })))));
+  }, /*#__PURE__*/_react.default.createElement(ProfileLinkStyles, null, /*#__PURE__*/_react.default.createElement("span", null, currentUserObj.userName), /*#__PURE__*/_react.default.createElement("img", {
+    src: currentUserObj.profilePic
+  }))))))));
 }
 
 var _default = Header;
@@ -8882,7 +8903,11 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
 var _Context = require("../Context");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -8908,10 +8933,36 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\nbackground: #C4C4C4;\nborder-radius: 10px;\nborder: none;\npadding: 12px 40px;\noutline: none;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\nbackground: #C4C4C4;\nborder-radius: 10px;\nborder: none;\npadding: 12px 27px;\nmax-width: 100%;\noutline: none;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var InputStyle = _styledComponents.default.input(_templateObject());
+
+var TextareaStyle = _styledComponents.default.textarea(_templateObject2());
+
 function Add() {
   var _useContext = (0, _react.useContext)(_Context.Context),
       posts = _useContext.posts,
-      users = _useContext.users,
+      state = _useContext.state,
       dispatch = _useContext.dispatch;
 
   var _useState = (0, _react.useState)(''),
@@ -8924,6 +8975,12 @@ function Add() {
       postPhoto = _useState4[0],
       setPostPhoto = _useState4[1];
 
+  var users = state.users,
+      currentUser = state.currentUser;
+  var currentUserObj = users.find(function (user) {
+    return user.userId === currentUser;
+  });
+
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
     var now = Date.now();
@@ -8933,19 +8990,15 @@ function Add() {
       date: date,
       postPhoto: postPhoto,
       legend: legend,
-      userId: 1606797074476,
+      userId: currentUserObj.userId,
       likes: [{
-        userId: 1606797074476,
+        userId: currentUserObj.userId,
         likeId: 1
       }, {
-        userId: 1606797074476,
+        userId: currentUserObj.userId,
         likeId: 2
       }],
-      comments: [// commentId: 1,
-        // text: "Ok",
-        // date: date,
-        // userId: 1606797074476
-      ]
+      comments: []
     };
     dispatch({
       type: "POSTS",
@@ -8959,7 +9012,7 @@ function Add() {
 
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("form", {
     onSubmit: handleSubmit
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "New post:"), /*#__PURE__*/_react.default.createElement("textarea", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Add a new post:"), /*#__PURE__*/_react.default.createElement("label", null, "Post content: "), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(TextareaStyle, {
     type: "text",
     name: "legend",
     value: legend,
@@ -8969,23 +9022,31 @@ function Add() {
     placeholder: "Say what\u2019s on your mind...",
     rows: "5",
     cols: "30"
-  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Picture url : "), /*#__PURE__*/_react.default.createElement("input", {
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Picture url : "), /*#__PURE__*/_react.default.createElement(InputStyle, {
     type: "url",
     name: "postPhoto",
     value: postPhoto,
     onChange: function onChange(e) {
       return setPostPhoto(e.target.value);
     },
-    placeholder: "Title",
+    placeholder: "Paste a URL here",
     required: true
-  }), /*#__PURE__*/_react.default.createElement("button", {
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
+    style: {
+      cursor: "pointer",
+      background: "C4C4C4",
+      borderRadius: "10px",
+      outline: "none",
+      border: "none",
+      padding: "12px 16px"
+    },
     type: "submit"
   }, "Post")));
 }
 
 var _default = Add;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Context":"Context.js"}],"UseFeed.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js"}],"UseFeed.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9084,7 +9145,84 @@ function UseFeed() {
 
 var _default = UseFeed;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./posts.json":"posts.json","./userData.json":"userData.json"}],"components/FeedList.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./posts.json":"posts.json","./userData.json":"userData.json"}],"components/Likes.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Context = require("../Context");
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\ndisplay: flex;\ngap: 10px;\nalign-items: center;\nbutton {\n    background: #2196F3;\n    border-radius: 10px;\n    border: none;\n    padding: 12px;\n    color: #fffffffc;\n    outline: none;\n    cursor: pointer;\n}\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var LikeContainer = _styledComponents.default.div(_templateObject());
+
+function Likes(_ref) {
+  var post = _ref.post;
+
+  var _useContext = (0, _react.useContext)(_Context.Context),
+      state = _useContext.state,
+      dispatch = _useContext.dispatch;
+
+  var currentUser = state.currentUser;
+
+  var handleNewLike = function handleNewLike() {
+    var newLike = {
+      likeId: Date.now(),
+      userId: currentUser
+    };
+    dispatch({
+      type: "LIKE_POST",
+      newLike: newLike,
+      postId: post.postId
+    });
+  };
+
+  function chackeLiked() {
+    return post.likes.some(function (like) {
+      return like.userId === currentUser;
+    });
+  }
+
+  function handleUnlike() {
+    dispatch({
+      type: 'UNLIKE_POST',
+      postId: post.postId
+    });
+  }
+
+  return /*#__PURE__*/_react.default.createElement(LikeContainer, null, chackeLiked() ? /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleUnlike
+  }, "Unlike Btn") : /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleNewLike
+  }, "Like Btn"), /*#__PURE__*/_react.default.createElement("span", null, post.likes.length));
+}
+
+var _default = Likes;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../Context":"Context.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"components/FeedList.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9099,6 +9237,8 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _Context = require("../Context");
 
 var _UseFeed3 = _interopRequireDefault(require("../UseFeed"));
+
+var _Likes = _interopRequireDefault(require("./Likes"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9124,8 +9264,18 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-between;\n\tgap: 15px;\n\talign-items: center;\n\timg {\n\t\twidth: 35px;\n\t\theight: 35px;\n\t\tborder-radius: 50%;\n\t}\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\nposition: relative;\nmargin: 16px\n"]);
+  var data = _taggedTemplateLiteral(["\nmax-width: fit-content;\nmargin: 0;\npadding: 12px 16px;\nbackground: #C4C4C4;\nborder-radius: 28px;\nborder: none;\ninput {\n    border: none;\n    background-color: transparent;\n    outline: none;\n    * {\n        color: white;\n    }\n}\nbutton {\n    border: none;\n    background: #2196F3;\n    border-radius: 19px;\n    padding: 6px 18px;\n    outline: none;\n    color: white;\n}\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -9135,7 +9285,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\ndisplay: flex;\njustify-content: space-between;\n"]);
+  var data = _taggedTemplateLiteral(["\ndisplay: flex;\nflex-direction: row;\njustify-content: space-between;\nalign-items: center;\ngap: 15px;\nimg {\n    width: 35px;\n    height: 35px;\n    border-radius: 50%;\n}\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -9175,7 +9325,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\nborder-radius: 50%;\nwidth: 50px;\n"]);
+  var data = _taggedTemplateLiteral(["\ndisplay: flex;\njustify-content: space-between;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -9186,7 +9336,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var ProfileImgStyle = _styledComponents.default.img(_templateObject());
+var ConteinerStyles = _styledComponents.default.div(_templateObject());
 
 var ImgPost = _styledComponents.default.img(_templateObject2());
 
@@ -9196,7 +9346,9 @@ var UlStyle = _styledComponents.default.ul(_templateObject4());
 
 var CommenterStyle = _styledComponents.default.div(_templateObject5());
 
-var SpanStyle = _styledComponents.default.span(_templateObject6());
+var FieldsetStyle = _styledComponents.default.fieldset(_templateObject6());
+
+var ProfileStyles = _styledComponents.default.div(_templateObject7());
 
 function FeedList(_ref) {
   var posts = _ref.posts,
@@ -9235,34 +9387,35 @@ function FeedList(_ref) {
     e.target.reset();
   }
 
-  var _useContext = (0, _react.useContext)(_Context.Context),
-      addLikes = _useContext.addLikes;
-
   var feedBackElement = posts.map(function (post) {
     var findUsersId = users.find(function (usr) {
       return usr.userId === post.userId;
     });
     return /*#__PURE__*/_react.default.createElement(PostStyle, {
       key: post.postId
-    }, /*#__PURE__*/_react.default.createElement(CommenterStyle, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(ProfileImgStyle, {
+    }, /*#__PURE__*/_react.default.createElement(CommenterStyle, null, /*#__PURE__*/_react.default.createElement(ProfileStyles, null, /*#__PURE__*/_react.default.createElement("img", {
       src: findUsersId.profilePic
-    }), /*#__PURE__*/_react.default.createElement(SpanStyle, null, findUsersId.userName)), /*#__PURE__*/_react.default.createElement("span", null, post.date)), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("p", null, post.legend), /*#__PURE__*/_react.default.createElement(ImgPost, {
+    }), /*#__PURE__*/_react.default.createElement("span", null, findUsersId.userName)), /*#__PURE__*/_react.default.createElement("span", null, post.date)), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("p", null, post.legend), /*#__PURE__*/_react.default.createElement(ImgPost, {
       src: post.postPhoto
-    }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
-      onClick: addLikes
-    }, "Like Btn"), /*#__PURE__*/_react.default.createElement("span", null))), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement(UlStyle, null, post.comments.map(function (comment) {
+    }), /*#__PURE__*/_react.default.createElement(_Likes.default, {
+      post: post
+    })), /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement(UlStyle, null, post.comments.map(function (comment) {
       return /*#__PURE__*/_react.default.createElement("li", {
         key: comment.commentId
-      }, /*#__PURE__*/_react.default.createElement(CommenterStyle, null, /*#__PURE__*/_react.default.createElement(CommenterStyle, null, /*#__PURE__*/_react.default.createElement(ProfileImgStyle, {
+      }, /*#__PURE__*/_react.default.createElement(ConteinerStyles, null, /*#__PURE__*/_react.default.createElement(CommenterStyle, null, /*#__PURE__*/_react.default.createElement("img", {
         src: users.find(function (usr) {
-          return usr.userId === comment.userId;
+          return usr.userId == comment.userId;
         }).profilePic
-      }), /*#__PURE__*/_react.default.createElement(SpanStyle, null, users.find(function (usr) {
-        return usr.userId === comment.userId;
+      }), /*#__PURE__*/_react.default.createElement("span", null, users.find(function (usr) {
+        return usr.userId == comment.userId;
       }).userName)), /*#__PURE__*/_react.default.createElement("span", null, comment.date)), /*#__PURE__*/_react.default.createElement("p", null, comment.text));
     }))), /*#__PURE__*/_react.default.createElement("form", {
       onSubmit: function onSubmit(e) {
         return Submit(e, post.postId);
+      }
+    }, /*#__PURE__*/_react.default.createElement(FieldsetStyle, {
+      style: {
+        maxWidth: "fit-conmtent"
       }
     }, /*#__PURE__*/_react.default.createElement("input", {
       type: "text",
@@ -9270,14 +9423,14 @@ function FeedList(_ref) {
       placeholder: "Add a comment..."
     }), /*#__PURE__*/_react.default.createElement("button", {
       type: "submit"
-    }, "Post")));
+    }, "Post"))));
   });
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, feedBackElement);
 }
 
 var _default = FeedList;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js","../UseFeed":"UseFeed.js"}],"pages/Feed.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js","../UseFeed":"UseFeed.js","./Likes":"components/Likes.js"}],"pages/Feed.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9320,7 +9473,11 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
 var _Context = require("../Context");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -9337,6 +9494,32 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\ndisplay: flex;\nflex-direction: row;\njustify-content: space-between;\ngap: 10px;\nmargin-bottom: 10px;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\nbackground: #C4C4C4;\nborder-radius: 10px;\nborder: none;\npadding: 12px 40px;\nmax-width: 100%;\noutline: none;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var InputStyle = _styledComponents.default.input(_templateObject());
+
+var InputContainerStyle = _styledComponents.default.div(_templateObject2());
 
 function UserName() {
   var _useContext = (0, _react.useContext)(_Context.Context),
@@ -9356,13 +9539,18 @@ function UserName() {
       profilePic = _useState4[0],
       setProfilePic = _useState4[1];
 
+  var _useState5 = (0, _react.useState)(''),
+      _useState6 = _slicedToArray(_useState5, 2),
+      switchAccount = _useState6[0],
+      setSwitchAccount = _useState6[1];
+
+  console.log("ctruu", currentUser);
   var currentUserObj = users.find(function (user) {
     return user.userId === currentUser;
   }) || {
     userName: '',
     profilePic: ''
   };
-  console.log("mam", currentUserObj);
   (0, _react.useEffect)(function () {
     setUserName(currentUserObj.userName);
     setProfilePic(currentUserObj.profilePic);
@@ -9374,29 +9562,41 @@ function UserName() {
       type: 'UPDATE_CURRENT_USER',
       userName: userName,
       profilePic: profilePic
-    });
+    }); // dispatch({type: 'SWITCHT_ACCOUNT', switchAccount: switchAccount})
   }
 
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", null, "Options: "), /*#__PURE__*/_react.default.createElement("form", {
     onSubmit: handleNewOptions
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Username"), /*#__PURE__*/_react.default.createElement("input", {
+  }, /*#__PURE__*/_react.default.createElement(InputContainerStyle, null, /*#__PURE__*/_react.default.createElement("label", null, "Username"), /*#__PURE__*/_react.default.createElement(InputStyle, {
     type: "text",
+    name: "userName",
     value: userName,
     onChange: function onChange(e) {
       return setUserName(e.target.value);
     }
-  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Profile picture"), /*#__PURE__*/_react.default.createElement("input", {
+  })), /*#__PURE__*/_react.default.createElement(InputContainerStyle, null, /*#__PURE__*/_react.default.createElement("label", null, "Profile picture"), /*#__PURE__*/_react.default.createElement(InputStyle, {
     type: "url",
+    name: "profilePic",
     value: profilePic,
     onChange: function onChange(e) {
       return setProfilePic(e.target.value);
     }
-  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", null, "Save")));
+  })), /*#__PURE__*/_react.default.createElement("button", {
+    style: {
+      cursor: "pointer",
+      background: "C4C4C4",
+      borderRadius: "10px",
+      border: "none",
+      outline: "none",
+      padding: "12px 16px"
+    },
+    type: "submit"
+  }, "Save")));
 }
 
 var _default = UserName;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Context":"Context.js"}],"pages/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Context":"Context.js"}],"pages/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36742,7 +36942,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52360" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56395" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -2,8 +2,17 @@ body {
     max-width: 90%;
     min-width: 90%;
     margin: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
 }
 
+@media (min-width: 779px) {
+    body {
+        max-width: 50%;
+        min-width: 50%;
+    }
+}
 
 /* 
 {
