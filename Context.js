@@ -40,20 +40,23 @@ function ContextProvider(props) {
       case 'USERS': {
         return { ...state, users: state.users }
       }
-      case 'COMMENTS': {
-        return { ...state, comments: action.comments }
-      }
-      case 'ADD_NEW_COMMENTS': {
-          const newPosts = state.posts.map(post => {
-              if(post.postId === action.postId) {
-                  return {
-                      ...post, 
-                      comments: [...post.comments, action.comment],
-                  };
-              }
-              return post;
-          })
-        return { ...state, posts: newPosts }
+      // case 'COMMENTS': {
+      //   return { ...state, comments: action.comments }
+      // }
+      case 'ADD_NEW_COMMENT': {
+        const newPosts = state.posts.map(post => {
+          if (post.postId == action.postId) {
+            return {
+              ...post,
+              comments: [...post.comments, action.newComment],
+            };
+          }
+          return post;
+        });
+        return {
+          ...state,
+          posts: newPosts,
+        };
       }
       case 'UNLIKE_POST': {
         const newPostsFromUnlike = state.posts.map(post => {
@@ -85,6 +88,12 @@ function ContextProvider(props) {
           ...state,
           posts: newPosts
         }
+      }
+      case 'ADD_NEW_USER': {
+        return {
+          ...state,
+          users: [...state.users, action.newUser],
+        };
       }
       default:
         return state

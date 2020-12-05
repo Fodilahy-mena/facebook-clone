@@ -27,7 +27,7 @@ function SwitchAccount() {
                         <option value={user.userId} key={user.userId}>{user.userName}</option>
                     ))}
                 </SelectStStyle><p/>
-                <button style={{cursor: "pointer",background: "C4C4C4",borderRadius: "10px", border: "none",outline: "none", padding: "12px 16px"}}>Save</button>
+                <button style={{color:"blue",cursor: "pointer",background: "C4C4C4",borderRadius: "10px", border: "none",outline: "none", padding: "12px 16px"}}>Save</button>
             </form>
             
         </div>

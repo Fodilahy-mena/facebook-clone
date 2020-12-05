@@ -1,7 +1,7 @@
 import React from 'react'
 import {Switch, Route, Link} from 'react-router-dom'
 import Header from '../components/Header'
-import Add from './Add'
+import AddPost from './AddPost'
 import Feed from './Feed'
 import UserName from './UserName'
 
@@ -14,8 +14,8 @@ function App() {
                     <Feed/>
 				</Route>
 
-                <Route path="/add">
-					<Add/>
+                <Route path="/addPost">
+					<AddPost/>
 				</Route>
 
                 <Route path="/userName">

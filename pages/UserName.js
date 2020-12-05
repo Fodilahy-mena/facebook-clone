@@ -2,6 +2,7 @@ import React,{useContext, useState, useEffect} from 'react';
 import {Switch, Route, Link} from 'react-router-dom'
 import styled from 'styled-components'
 import { Context } from '../Context';
+import AddNewProfile from './AddNewProfile';
 import SwitchAccount from './Switch';
 
 const InputStyle = styled.input`
@@ -13,9 +14,7 @@ max-width: 100%;
 outline: none;
 `;
 const InputContainerStyle = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+
 gap: 10px;
 margin-bottom: 10px;
 `;
@@ -24,9 +23,8 @@ function UserName() {
     const { users, currentUser } = state;
 	const [userName, setUserName] = useState('');
 	const [profilePic, setProfilePic] = useState('');
-	
-    
-    const currentUserObj = users.find(user => user.userId === currentUser) || {
+
+    const currentUserObj = users.find(user => user.userId == currentUser) || {
 		userName: '',
 		profilePic: '',
     };
@@ -34,7 +32,7 @@ function UserName() {
     useEffect(() => {
 		setUserName(currentUserObj.userName);
 		setProfilePic(currentUserObj.profilePic);
-    }, [users]);
+    }, []);
     
     function handleNewOptions(e) {
 		e.preventDefault();
@@ -42,18 +40,19 @@ function UserName() {
 	}
 	
     return (
-        <div>
+        <div className="post">
 			<nav>
-				<Link to="/userName/options">Account options</Link>
-				<Link to="/userName/options/switch">Switch account</Link>
+				<Link to="/userName">Account options</Link>
+				<Link to="/userName/switch">Switch account</Link>
+				<Link to="/userName/add">Add new profile</Link>
 			</nav>
 			
 			<Switch>
-				<Route exact path="/userName/options">
+				<Route exact path="/userName">
 					<h2>Options: </h2>
 					<form onSubmit={handleNewOptions}>
 					<InputContainerStyle>
-						<label>Username</label>
+						<label>Username</label><br/>
 						<InputStyle
 							type="text"
 							name="userName"
@@ -63,7 +62,7 @@ function UserName() {
 						/>
 					</InputContainerStyle>
 					<InputContainerStyle>
-						<label>Profile picture</label>
+						<label>Profile picture</label><br/>
 						<InputStyle
 							type="url"
 							name="profilePic"
@@ -72,11 +71,14 @@ function UserName() {
 						/>
 					</InputContainerStyle>
 					
-					<button style={{cursor: "pointer",background: "C4C4C4",borderRadius: "10px", border: "none",outline: "none", padding: "12px 16px"}} type="submit">Save</button>
+					<button style={{color:"blue",cursor: "pointer",background: "C4C4C4",borderRadius: "10px", border: "none",outline: "none", padding: "12px 16px"}} type="submit">Save</button>
 				</form>
 			</Route>
-			<Route path="/userName/options/switch">
+			<Route path="/userName/switch">
 				<SwitchAccount />
+			</Route>
+			<Route path="/userName/add">
+				<AddNewProfile />
 			</Route>
 		</Switch>
             

@@ -16,7 +16,7 @@ padding: 12px 40px;
 outline: none;
 `;
 import { Context } from '../Context';
-function Add() {
+function AddPost() {
     const { posts, state, dispatch }= useContext(Context);
     const [legend, setLegend] = useState('');
     const [postPhoto, setPostPhoto] = useState('');
@@ -56,7 +56,7 @@ function Add() {
         setPostPhoto('');
     }
     return (
-        <div>
+        <div className="post">
             <form onSubmit={handleSubmit}>
                 <h2>Add a new post:</h2>
                 <label>Post content: </label><br/>
@@ -64,10 +64,10 @@ function Add() {
                 <label>Picture url : </label>
                 <InputStyle type="url" name="postPhoto" value={postPhoto} onChange={(e) => setPostPhoto(e.target.value)} placeholder="Paste a URL here" required/> 
                 <br/>
-                <button style={{cursor: "pointer", background: "C4C4C4",borderRadius: "10px", outline: "none", border: "none", padding: "12px 16px"}} type="submit">Post</button>
+                <button style={{color:"blue",cursor: "pointer", background: "C4C4C4",borderRadius: "10px", outline: "none", border: "none", padding: "12px 16px"}} type="submit">Post</button>
             </form>
         </div>
     )
 }
 
-export default Add
+export default AddPost
