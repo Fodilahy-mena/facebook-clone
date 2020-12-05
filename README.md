@@ -15,7 +15,7 @@ Options : It’s a page where I can update a simple profile.
 Tech requirements :
 
 - There should be a global context state, handled with a reducer
-= The post components needs to be a Compound Component
+- The post components needs to be a Compound Component
 Feel free to update the styles as you want, but focus on the functional requirements first.
 
 Send me the github link and netlify link when it’s done.
